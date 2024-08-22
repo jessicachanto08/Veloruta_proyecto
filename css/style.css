@@ -1,0 +1,1172 @@
+/*TIPOGRAFIAS*/
+@font-face {
+    font-family: ClashDisplay;
+    src: url(../fonts/ClashDisplay/ClashDisplay-Bold.otf);
+}
+
+@font-face {
+    font-family: Outfit-Medium;
+    src: url(../fonts/Outit_Complete/Outfit-Black.otf);
+}
+
+@font-face {
+    font-family: Outfit-Regular;
+    src: url(../fonts/Outit_Complete/Outfit-Regular.otf);
+}
+@font-face {
+    font-family: Outfit-Light;
+    src: url(../fonts/Outit_Complete/Outfit-Light.otf);
+}
+@font-face {
+    font-family: Outfit-Black;
+    src: url(../fonts/Outit_Complete/Outfit-Black.otf);
+}
+@font-face {
+    font-family: Outfit-Semibold;
+    src: url(../fonts/Outit_Complete/Outfit-SemiBold.otf);
+}
+/*FIN DE TIPOGRAFIAS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    height: 5rem;
+    background: #f3f3f3;
+    padding: 0 15rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.menu-toggle,
+.menu-icon{
+    display: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+}
+.menu a{
+    font-family:'Outfit-Medium', sans-serif;
+    font-size: 1rem;
+    color: #2a2a2a;
+    text-decoration: none;
+    padding: 0 1rem;
+    transition: 0.4s;
+}
+.menu a:hover{
+    color: #4EAE33;
+    transition: .3s;
+}
+
+/* BANNER */
+#banner{
+    background: url(../imagenes/Banner.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+}
+.contenido-banner{
+    padding-top: 18rem;
+    padding-left: 15rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contenido-banner h1{
+    font-family: 'ClashDisplay', sans-serif;
+    font-size: 3.5rem;
+    color: #4EAE33;
+}
+.contenido-banner p{
+    font-family: 'Outfit-Regular', sans-serif;
+    font-size: 1.50rem;
+    margin: .75rem 0 .75rem;
+    color: #2a2a2a;
+}
+button {
+    background-color: transparent;
+    border: 4px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Outfit-Light', sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #4EAE33;
+    width: 230px;
+}
+button:focus{
+    outline: 0;
+}
+.btn{
+    border-color: #4EAE33;
+    background-image: linear-gradient(45deg, #4eae33 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 0.3s ease-in-out;
+}
+.btn:hover{
+    background-position: 0;
+    color: #fff;
+    transition: .4s;
+}
+/* Final del Banner */
+/* Inicio de Seccion Fecha */
+.fecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    /* height: 20rem; */
+    background: #2A2A2A;
+    
+}
+.fecha-info{
+    display: flex;
+    background: #fff;
+    border-radius: 5px;
+    padding: 1.25rem 6.25rem;
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+.fecha-info:hover{
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 2);
+    transform: translateY(-1%);
+    transition: all .2s;
+}
+.fecha-info h4{
+    font-family: 'Outfit-Semibold' ,sans-serif;
+    font-size: 1.8rem;
+    color: #2A2A2A;
+    text-align: center;
+}
+.fecha-info .text-green{
+    color: #4EAE33;
+}
+.fecha-info p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit-Light', sans-serif;
+    font-size: 1.3rem;
+    color: #626262;
+
+}
+/* Final de seccion fecha */
+/* Inicio de seccion Nosotros */
+/* Contenido */
+.nosotros{
+    display: flex;
+    align-items: center;
+    width: auto;
+    background: url(../imagenes/Fondo-nosotros.png) no-repeat;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+.contenido-nosotros{
+    padding: 5rem 15rem;
+    max-width: 75rem;
+}
+.nosotros-info h2{
+    font-family: 'Outfit-Black',sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.nosotros-info p{
+    font-family: 'Outfit-Light',sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+}
+/* Final de seccion Nosotros */
+/* Inicio seccion Ruta Completa */
+.ruta-completa{
+    height: auto;
+    display: flex;
+    background: #f3f3f3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding: 0 15rem;
+}
+.contenido-ruta-completa{
+    max-width: 68rem;
+    margin: 3rem 0;
+}
+.ruta-completa-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ruta-completa-info h2{
+    font-family: 'Outfit-Black',sans-serif;
+    font-size: 2.5rem;
+    color: #2a2a2a;
+}
+.ruta-completa-info p{
+    font-family: 'Outfit-Light', sans-serif;
+    font-size: 1.50rem;
+    color: #2A2A2A;
+    margin: 2.5rem 0;
+}
+.ruta-completa-info .btn{
+    margin-bottom: 1rem;
+}
+/* Final de seccion Ruta completa */
+/* Inicio de la seccion Etapas */
+.etapas{
+    height: auto;
+    display: flex;
+    align-items: center;
+    background: #2a2a2a;
+    flex-direction: column;
+    color: #fff;
+    padding: 5rem 15rem;
+}
+.contenido-etapas{
+    justify-content: center;
+    text-align: center;
+    max-width: 68rem;
+}
+.etapas-info h2{
+    font-size: 2.5rem;    
+    font-family: 'Outfit-Black', sans-serif;
+}
+.etapas-info p{
+    font-family: 'Outfit-Light', sans-serif;
+    font-size: 1.50rem;
+    margin: 2.5rem 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin: auto;
+    width: 80%;
+    padding-top: 50px;
+    font-family: 'Outfit-Light', sans-serif;
+}
+.faq .head {
+    display: flex;
+    padding: 25px 0px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.faq .content {
+    height: 0px;
+    overflow-y: hidden;
+    border-bottom: 1px solid #ffffff;
+    transition: height 0.25s ease-in-out;
+}
+.head span{
+    font-size: 1.8rem ;
+}
+.content p{
+    font-size: 1.50rem;
+}
+.content-img{
+    display: flex;
+    flex-wrap: wrap;
+    place-items: center;
+}
+.faq.active .head svg{
+    transform: rotate(180deg);
+}
+.content span{
+    font-size: 1rem
+}
+/* Final de la seccon Etapas */
+/* Inicio sección camisas */
+.camisas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    background: #f3f3f3;
+    padding: 4rem 15rem;
+}
+.camisas img{
+    width: 20rem;
+}
+.camisas .hombre-2{
+    width: 15rem;
+}
+.camisas .camiseta-2{
+    width: 15rem;
+}
+.camisas h2{
+    font-size: 2.5rem;    
+    font-family: 'Outfit-Black', sans-serif;
+    color: #2A2A2A;
+}
+.camisas-hombre{
+    margin: 3rem 0 3rem;
+}
+/* Final sección camisas */
+/* Inicio de seccion paquetes de inscripcion */
+.paquetes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: #f3f3f3;
+}
+.paquetes-info h2{
+    font-size: 2.5rem;
+    color: #2a2a2a;
+    font-family: 'Outfit-Black', sans-serif;
+}
+.paquetes h3{
+    font-family:'Outfit-Light', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+.paquetes-info{
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.paquetes-inscripcion{
+    height: auto;
+    display: flex;
+    padding: 4rem 15rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.card-content{
+    background: #4C7148;
+    width: 28rem;
+    height: 47rem;
+    border-radius: 10px;
+    color: #fff;
+    transition: all 400ms ease-out;
+    cursor: default;
+}
+.card-content:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 88, 1);
+    transform: translateY(-1%);
+    transition: .3s;
+}
+.card-content img{
+    width: 28rem;
+    border-radius: 10px 10px 0 0;
+}
+.card-info{
+    padding: 1rem 2rem;
+    gap: 12px;
+}
+.card-content p{
+    font-family: 'Outfit-Light',sans-serif;
+    font-size: 1.50rem;
+}
+.card-content span h3{
+    text-align: left;
+}
+/* Final de seccion paquetes de inscripcion */
+/* Inicio de premios */
+.premios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 18rem 0;
+    background-position: center;
+    color: white;
+    text-align: center;
+    background: url(../imagenes/Fondo-premios.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.izquierda{
+    position: absolute;
+    left: 20%;
+}
+.derecha{
+    position: absolute;
+    right: 20%;
+}
+.premios h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Outfit-Black',sans-serif;
+}
+.premios h2 span{
+    color: #2A2A2A;
+}
+.premios h3{
+    font-family:'Outfit-Medium', sans-serif;
+    font-size: 1.8rem;
+    color: #f3f3f3;
+}
+.premios h4{
+    font-family:'Outfit-Black', sans-serif;
+    font-size: 1.5rem;
+    color: #f3f3f3;
+}
+/* Final de premios */
+/* Inicio de Eventos */
+.eventos{
+    height: auto;
+    padding: 4rem 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #f3f3f3;
+}
+.eventos-info h2{
+    font-size: 3rem;
+    color: #4EAE33;
+    font-family: 'Outfit-Black',sans-serif;
+}
+.eventos-info h4{
+    max-width: 40rem;
+    margin-top: 1.5rem;
+    font-family: 'Outfit-Regular',sans-serif;
+    font-size: 1.2rem;
+}
+/* Final de eventos */
+/* Inicio de patrocinadores */
+.slider-patrocinadores{
+    padding: 3rem 0;
+    background: #f3f3f3;
+}
+.slider {
+    width: 75vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 60s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 14);
+    gap: 3rem;
+}
+
+.slider .slide {
+    width: 150px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+.slider-track{
+    max-height: 30rem;
+}
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+/* Inscripcion */
+.contenedor-inscripcion {
+    background: #2A2A2A;
+}
+.texto-inscripcion {
+    padding: 5rem 15rem;
+    text-align: center;
+    color: white;
+}
+.texto-inscripcion h2{
+    font-family: 'Outfit-Black',sans-serif,sans-serif;
+    font-size: 2.5rem;
+}
+.texto-inscripcion p{
+    margin-top: 1rem;
+    font-family: 'Outfit-Light',sans-serif;
+    font-size: 1.50rem;
+}
+/* Final de patrocinadores */
+    /* Form */
+    .formulario {
+        padding: 5rem 0;
+        font-family: 'Outfit',sans-serif;
+        background: url(../img/Web/fondo-formulario.jpg) center no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0;
+    }
+    .container-formulario {
+        max-width: 100%;
+        width: 100%;
+        max-width: 600px;
+        padding: 20px;
+        background: #fffdfd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: #2a2a2a;
+    }
+    .container-formulario h1{
+        color: #4EAE33;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    .h1-formulario{
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+    }
+    label {
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    input, select, textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 16px;
+        border: 1px solid #4EAE33;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input:focus, select:focus, textarea:focus {
+        border-color: #700404;
+        outline: none;
+    }
+    
+    button {
+        background-color: #2a2a2a;
+        color: #fff;
+        border: none;
+        padding: 12px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    .hidden {
+        display: none;
+    }
+    
+    #success-message {
+        margin-top: 20px;
+        padding: 15px;
+        background-color: #f3f3f3;
+        color: #2a2a2a;
+        border: 1px solid #f3f3f3;
+        border-radius: 4px;
+    }
+
+    /* Estilos adicionales para pantallas más pequeñas */
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 20px;
+        }
+    
+        input, select, textarea {
+            padding: 10px;
+            font-size: 14px;
+        }
+    
+        button {
+            padding: 10px;
+            font-size: 14px;
+        }
+    
+        h1 {
+            font-size: 20px;
+        }
+    }
+/* Inicio del footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #2A2A2A;
+    height: auto;
+    padding: 5rem 15rem;
+    color: #fff;
+}
+footer .footer-info .redes{
+    margin: 1rem 0;
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Outfit-Light',sans-serif;
+    font-size: 1.2rem;
+}
+.menu-footer a{
+    font-family: 'Outfit-Light',sans-serif;
+    color: #fff;
+    text-decoration: none;
+    margin-left: .5rem;
+}
+.menu-footer a:hover{
+    color: #4EAE33;
+    transition: .3s;
+}
+.menu-footer{
+    margin-top: 1rem;
+}
+footer p{
+    font-size: 1rem;
+}
+/* Final de Footer */
+
+
+/*RESPONSIVE 1440*/
+@media screen and (max-width: 1440px){
+    header{
+        padding: 0 2rem;
+    }
+    .contenido-banner{
+        padding-left: 2rem;
+    }
+    .contenido-banner h1{
+        font-size: 3.5rem;
+    }
+    .contenido-nosotros{
+        padding: 5rem 2rem;
+        max-width: 45rem;
+    }
+    /* Ruta completa */
+    .ruta-completa{
+        padding: 0 2rem;
+    }
+    /* ETAPAS */
+    .etapas{
+        padding: 5rem 2rem;
+    }
+    /* CAMISAS */
+    .camisas{
+        padding: 5rem 2rem;
+    }
+    .texto-inscripcion{
+        padding: 5rem 2rem;
+    }
+}
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 992px){
+    /*HEADER*/
+    header{
+        padding-left: 1rem;
+    }
+    .menu-toggle {
+        display: none; /* Oculto por defecto */
+    }
+    .menu-icon {
+        font-size: 30px;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1001;
+        color: #2A2A2A;
+        display: block; /* Mostrar en pantallas pequeñas */
+    }
+
+    .menu-open {
+        display: block;
+    }
+
+    .menu-close {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0 ;
+        width: 50%;
+        height: 100vh;
+        background: #f3f3f3;
+        z-index: 100;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+        padding-top: 60px;
+        transition: .5s;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu ul li {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #2a2a2a;
+        display: block;
+    }
+    .menu-toggle:checked + .menu-icon .menu-open {
+        display: none;
+    }
+
+    .menu-toggle:checked + .menu-icon .menu-close {
+        display: block;
+    }
+
+    .menu-toggle:checked + .menu-icon + .menu {
+        display: block;
+    }
+
+    /* Banner */
+    .contenido-banner{
+        padding-left: 1rem;
+    }
+    .contenido-banner h1{
+        font-size: 3rem;
+    }
+    .contenido-banner p{
+        font-size: 1.20rem;
+    }
+    /* Fecha */
+    .fecha-info h4{
+        font-size: 1.2rem;
+    }
+    .fecha-info p{
+        font-size: 1.20rem;
+    }
+    /* Nosotros */
+    .contenido-nosotros{
+        padding: 5rem 1rem;
+        max-width: 32rem;
+    }
+    .contenido-nosotros h2{
+        font-size: 2rem;
+    }
+    .contenido-nosotros p{
+        font-size: 1.20rem;
+    }
+    /* Ruta Completa */
+    .ruta-completa{
+        padding: 0 1rem;
+    }
+    .ruta-completa h2{
+        font-size: 2rem;
+    }
+    .ruta-completa p{
+        font-size: 1.2rem;
+    }
+    /* Etapas */
+    .etapas{
+        padding: 5rem 1rem;
+    }
+    .etapas h2{
+        font-size: 2rem;
+    }
+    .etapas p{
+        font-size: 1.20rem;
+    }
+    .head span{
+        font-size: 1.3rem ;
+    }
+    .content p{
+        font-size: 1.20rem;
+    }
+    /* CAMISAS */
+    .camisas{
+        padding: 5rem 1rem;
+    }
+    .camisas h2{
+        font-size: 2rem;
+    }
+    .camisas img{
+        width: 14rem;
+    }
+    .camisas .hombre-2{
+        width: 10rem;
+    }
+    .camisas .camiseta-2{
+        width: 10rem;
+    }
+    /* PAQUETES */
+    .paquetes h2{
+        font-size: 2rem;
+    }
+    .paquetes h3{
+        font-size: 1.3rem;
+    }
+    .card-content h4{
+        font-size: 1.2rem;
+    }
+    .card-content p{
+        font-size: 1.20rem;
+    }
+    .premios h2{
+        font-size: 2rem;
+    }
+    .premios h3{
+        font-size: 1.3rem;
+    }
+    .eventos{
+        padding: 4rem 1rem;
+    }
+    .eventos h2{
+        font-size: 2rem;
+    }
+    /* INSCRIPCION */
+    .texto-inscripcion h2{
+        font-size: 2rem;
+    }
+    .texto-inscripcion p{
+        font-size: 1.20rem;
+    }
+    footer{
+        padding: 5rem 1rem;
+    }
+}
+/* Final query de tablet */
+@media screen and (max-width: 768px){
+    /* Banner */
+    .contenido-banner{
+        padding-left: 1.2rem;
+    }
+    .contenido-banner h1{
+        font-size: 2.5rem;
+    }
+    .contenido-banner p{
+        font-size: 1.10rem;
+    }
+    /* Fecha */
+    .fecha-info h4{
+        font-size: 1.2rem;
+    }
+    .fecha-info p{
+        font-size: 1.20rem;
+    }
+    /* Nosotros */
+    .contenido-nosotros{
+        padding: 5rem 1.2rem;
+        max-width: 26rem;
+    }
+    .contenido-nosotros h2{
+        font-size: 1.8rem;
+    }
+    .contenido-nosotros p{
+        font-size: 1.10rem;
+    }
+    /* Ruta Completa */
+    .ruta-completa{
+        padding: 0 1.2rem;
+    }
+    .ruta-completa h2{
+        font-size: 1.8rem;
+    }
+    .ruta-completa p{
+        font-size: 1.10rem;
+    }
+    .ruta-completa img{
+        width: 22rem;
+    }
+    /* Etapas */
+    .etapas{
+        padding: 3rem 1.2rem;
+    }
+    .etapas img{
+        width: 14rem;
+    }
+    .etapas h2{
+        font-size: 1.8rem;
+    }
+    .etapas p{
+        font-size: 1.10rem;
+    }
+    .head span{
+        font-size: 1.2rem ;
+    }
+    .content p{
+        font-size: 1.10rem;
+    }
+    /* CAMISAS */
+    .camisas{
+        padding: 3rem 1.2rem;
+    }
+    .camisas h2{
+        font-size: 1.8rem;
+    }
+    .camisas img{
+        width: 10rem;
+    }
+    .camisas .hombre-2{
+        width: 7rem;
+    }
+    .camisas .camiseta-2{
+        width: 7rem;
+    }
+    /* PAQUETES */
+    .paquetes h2{
+        font-size: 1.8rem;
+    }
+    .paquetes h3{
+        font-size: 1.3rem;
+    }
+    .card-content{
+        height: 35rem;
+        width: 22rem;
+    }
+    .card-content img{
+        width: 22rem;
+    }
+    .card-content h4{
+        font-size: 1.2rem;
+    }
+    .card-content p{
+        font-size: 1.10rem;
+    }
+    .premios h2{
+        font-size: 1.8rem;
+    }
+    .premios h3{
+        font-size: 1.3rem;
+    }
+    .eventos{
+        padding: 3rem 1.2rem;
+    }
+    .eventos h2{
+        font-size: 1.8rem;
+    }
+    /* INSCRIPCION */
+    .texto-inscripcion h2{
+        font-size: 1.8rem;
+    }
+    .texto-inscripcion{
+        padding: 5rem 1rem;
+    }
+    .texto-inscripcion p{
+        font-size: 1.10rem;
+    }
+    .formulario {
+        padding: 5rem 1.2rem;
+    }
+    footer{
+        padding: 5rem 1.2rem;
+    }
+    .footer-info{
+        font-family: 'Outfit-Light';
+        font-size: 1rem;
+    }
+    header .logo img{
+        width: 10rem;
+    }
+
+}
+@media screen and (max-width: 690px){
+    .contenido-banner p{
+        color: #fff;
+    }
+}
+@media screen and (max-width: 495px){
+    /* Banner */
+    .contenido-banner{
+        padding-left: 1.2rem;
+    }
+    .contenido-banner h1{
+        font-size: 2.3rem;
+    }
+    .contenido-banner p{
+        font-size: 1rem;
+    }
+    /* Fecha */
+    .fecha{
+        height: 15rem;
+    }
+    .fecha-info{
+        padding: 1rem 2rem;
+    }
+    .fecha-info h4{
+        font-size: 1.1rem;
+    }
+    .fecha-info p{
+        font-size: 1rem;
+    }
+    /* Nosotros */
+    .contenido-nosotros{
+        padding: 5rem 1.2rem;
+        max-width: 23rem;
+    }
+    .contenido-nosotros h2{
+        font-size: 1.5rem;
+    }
+    .contenido-nosotros p{
+        font-size: 1rem;
+    }
+    /* Ruta Completa */
+    .ruta-completa{
+        padding: 0 1.2rem;
+    }
+    .ruta-completa h2{
+        font-size: 1.5rem;
+    }
+    .ruta-completa p{
+        font-size: 1rem;
+    }
+    .ruta-completa img{
+        width: 18rem;
+    }
+    /* Etapas */
+    .etapas{
+        padding: 5rem 1.2rem;
+    }
+    .etapas img{
+        width: 15rem;
+    }
+    .etapas h2{
+        font-size: 1.5rem;
+    }
+    .etapas p{
+        font-size: 1rem;
+    }
+    .head span{
+        font-size: 1.1rem ;
+    }
+    .content p{
+        font-size: 1rem;
+    }
+    /* CAMISAS */
+    .camisas{
+        padding: 2rem 1.2rem;
+    }
+    .camisas h2{
+        font-size: 1.5rem;
+    }
+    .camisas img{
+        width: 8rem;
+    }
+    .camisas .hombre-2{
+        width: 6rem;
+    }
+    .camisas .camiseta-2{
+        width: 6rem;
+    }
+    /* PAQUETES */
+    .paquetes h2{
+        font-size: 1.5rem;
+    }
+    .paquetes h3{
+        font-size: 1.2rem;
+    }
+    .card-content{
+        height: 33rem;
+        width: 18rem;
+    }
+    .card-content img{
+        width: 18rem;
+    }
+    .card-content h4{
+        font-size: 1.2rem;
+    }
+    .card-content p{
+        font-size: 1rem;
+    }
+    .derecha{
+        position: initial;
+    }
+    .izquierda{
+        position: initial;
+    }
+    .premios h2{
+        font-size: 1.5rem;
+    }
+    .premios h3{
+        font-size: 1.3rem;
+    }
+    .premios h4{
+        font-size: 1rem;
+        color: #4EAE33;
+    }
+    .eventos{
+        padding: 1rem 1.2rem;
+    }
+    .eventos h2{
+        font-size: 1.5rem;
+    }
+    .eventos p{
+        font-size: 1rem;
+    }
+    /* INSCRIPCION */
+    .texto-inscripcion{
+        padding: 5rem 1rem;
+    }
+    
+    .texto-inscripcion h2{
+        font-size: 1.5rem;
+    }
+    .texto-inscripcion p{
+        font-size: 1rem;
+    }
+    footer{
+        padding: 5rem 1rem;
+    }
+    .menu-footer a{
+        font-size: .8rem;
+    }
+    .logo-footer{
+        width: 9rem; 
+    }
+    .footer-info{
+        font-family: 'Outfit-Light';
+        font-size: 1rem;
+    }
+    header .logo img{
+        width: 8rem;
+    }
+}
+@media screen and (max-width: 399px){
+    .camisas img{
+        width: 6rem;
+    }
+    .camisas .hombre-2{
+        width: 4rem;
+    }
+    .camisas .camiseta-2{
+        width: 4rem;
+    }
+}
