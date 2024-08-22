@@ -26,7 +26,6 @@ faqHeads.forEach((faqHead) => {
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('registration-form');
     const successMessage = document.getElementById('success-message');
-    console.log(document.getElementById('check').checked);
     form.addEventListener('submit', function(event) {
         event.preventDefault(); 
 
